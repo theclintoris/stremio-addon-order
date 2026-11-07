@@ -1,0 +1,43 @@
+{
+  "name": "stremio-addon-order",
+  "version": "1.0.0",
+  "description": "Manually sort the add-ons in your Stremio collection from the terminal.",
+  "keywords": [
+    "stremio",
+    "stremio-addon",
+    "addons",
+    "sort",
+    "order",
+    "catalogs",
+    "cli",
+    "tui"
+  ],
+  "license": "MIT",
+  "author": "Clintoris",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clintoris/stremio-addon-order.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clintoris/stremio-addon-order/issues"
+  },
+  "homepage": "https://github.com/clintoris/stremio-addon-order#readme",
+  "type": "module",
+  "bin": {
+    "stremio-addon-order": "bin/stremio-addon-order.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch",
+    "start": "node bin/stremio-addon-order.js"
+  }
+}
