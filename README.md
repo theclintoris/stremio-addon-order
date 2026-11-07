@@ -7,21 +7,7 @@ add-on collection. This tool lets you change that order deliberately — move on
 add-on before another, or reorder the whole list interactively — instead of
 fighting with drag handles.
 
-```console
-$ npx stremio-addon-order sort
-
-SORT ADD-ONS
-↑/↓ move · space pick up / drop · s save · r reset · q quit
-
-    1  Cinemeta
-    2  Local Files (without catalog support)
-    3  OpenSubtitles v3
- *  4  Streaming Catalogs
->   5  Sports Streams
-    6  Comet | ElfHosted | TB
-
-Holding "Streaming Catalogs" — move and press space to drop
-```
+![Terminal demo: listing add-ons, then sorting Sports Streams above Streaming Catalogs](docs/demo.gif)
 
 [![npm](https://img.shields.io/npm/v/stremio-addon-order.svg)](https://www.npmjs.com/package/stremio-addon-order)
 [![CI](https://github.com/clintoris/stremio-addon-order/actions/workflows/ci.yml/badge.svg)](https://github.com/clintoris/stremio-addon-order/actions/workflows/ci.yml)
@@ -195,6 +181,7 @@ Zero runtime dependencies; tests use `node:test`.
 ```bash
 npm test          # unit + integration tests, no network needed
 npm run test:watch
+npm run demo      # regenerate docs/demo.gif (needs ffmpeg)
 npm pack --dry-run
 ```
 
@@ -206,7 +193,8 @@ src/auth.js                  auth-key discovery (LevelDB / UTF-16LE)
 src/collection.js            pure collection logic
 src/sort-ui.js               interactive sorter state machine
 src/table.js                 plain-text table rendering
-test/                        unit tests, no network needed
+docs/render-demo.mjs         demo GIF generator (renders the real screens)
+test/                        unit and integration tests, no network needed
 ```
 
 Releasing: `npm version patch && git push --follow-tags && npm publish`.

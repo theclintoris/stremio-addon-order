@@ -29,6 +29,7 @@
   "files": [
     "bin",
     "src",
+    "docs",
     "README.md",
     "LICENSE"
   ],
@@ -38,6 +39,7 @@
   "scripts": {
     "test": "node --test",
     "test:watch": "node --test --watch",
+    "demo": "node docs/render-demo.mjs",
     "start": "node bin/stremio-addon-order.js"
   }
 }
