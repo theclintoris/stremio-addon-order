@@ -16,12 +16,12 @@
   "author": "Clintoris",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clintoris/stremio-addon-order.git"
+    "url": "git+https://github.com/theclintoris/stremio-addon-order.git"
   },
   "bugs": {
-    "url": "https://github.com/clintoris/stremio-addon-order/issues"
+    "url": "https://github.com/theclintoris/stremio-addon-order/issues"
   },
-  "homepage": "https://github.com/clintoris/stremio-addon-order#readme",
+  "homepage": "https://github.com/theclintoris/stremio-addon-order#readme",
   "type": "module",
   "bin": {
     "stremio-addon-order": "bin/stremio-addon-order.js"
