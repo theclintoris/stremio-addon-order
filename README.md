@@ -193,7 +193,7 @@ The interactive sorter needs a TTY. Use `move` from a script or a pipe.
 Zero runtime dependencies; tests use `node:test`.
 
 ```bash
-npm test          # 57 tests
+npm test          # unit + integration tests, no network needed
 npm run test:watch
 npm pack --dry-run
 ```
